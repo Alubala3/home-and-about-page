@@ -1,0 +1,180 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+    scroll-behavior: smooth;
+}
+
+.banner
+{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url(images/back.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.banner .content
+{
+    max-width: 900px;
+    text-align: center;
+}
+
+.banner .content h2
+{
+    font-size: 55px;
+    color: #ddd;
+}
+
+
+
+.banner .content p
+{
+    font-size: 18px;
+    font-weight: 300;
+    color: #ddd;
+    margin-top: 20px;
+    line-height: 25px;
+}
+
+.btn
+{
+    font-size: 1rem;
+    background: cyan;
+    display: inline-block;
+    padding: 10px 15px;
+    text-decoration: none;
+    font-weight: 600;
+    color: #fff;
+    margin-top: 20px;
+    text-transform: uppercase;
+    border-radius: 5px;
+    letter-spacing: 2px;
+    transition: 0.5s;
+}
+
+.btn:hover
+{
+    letter-spacing: 6px;
+}
+
+header
+{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 40px 100px;
+    z-index: 10000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.5;
+}
+
+header.sticky
+{
+    background: rgb(148, 147, 147);
+    padding: 10px 100px;
+    box-shadow: 0px 5px 20px;
+    transition: 0.5s;
+}
+
+header .logo
+{
+    color: #fff;
+    font-size: 25px;
+    font-weight: 800;
+    text-decoration: none;
+    font-family: sans-serif;
+}
+
+header .logo span
+{
+    color: aqua;;
+
+}
+
+header .navigation
+{
+    position: relative;
+    display: flex;
+    list-style: none;
+}
+
+header .navigation li a
+{
+    text-decoration: none;
+    margin-left: 25px;
+    font-size: 18px;
+    font-weight: 700;
+    color: #fff;
+}
+
+header .navigation li a:hover
+{
+    color: aqua;
+}
+
+section
+{
+    padding: 100px;
+}
+
+.row
+{
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.row.row-in
+{
+    position: relative;
+    width: 40%;
+}
+
+.title
+{
+    color: #111;
+    font-size: 40px;
+    font-weight: 300;
+}
+
+.title span
+{
+    color: aqua;
+}
+
+.row.row-in .imgBox
+{
+    position: relative;
+    width: 100%;
+    /*min-height: 300px;*/
+    height: 100%;
+}
+
+.row.row-in .imgBox img
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.row-in .rowText
+{
+    line-height: 30px;
+    font-weight: 500;
+    color: #111;
+    font-size: 18px;
+}
